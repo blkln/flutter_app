@@ -101,12 +101,12 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
         leading: IconButton(
-          icon: Icon(Icons.indeterminate_check_box),
+          icon: Icon(Icons.trending_down),
           onPressed: _openDrawer,
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.add_box),
+            icon: Icon(Icons.trending_up),
             onPressed: _openEndDrawer,
           ),
         ],
@@ -143,16 +143,16 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       drawer: Drawer(
         child: IconButton(
-          icon: Icon(Icons.arrow_downward),
-          iconSize: 56.0,
+          icon: Icon(Icons.indeterminate_check_box),
+          iconSize: 80.0,
           onPressed: _decrementCounter,
           tooltip: 'Decrement counter by 1',
         ),
       ),
       endDrawer: Drawer(
         child: IconButton(
-          icon: Icon(Icons.arrow_upward),
-          iconSize: 56.0,
+          icon: Icon(Icons.add_box),
+          iconSize: 80.0,
           onPressed: _incrementCounter,
           tooltip: 'Increment counter by 1'
         )
